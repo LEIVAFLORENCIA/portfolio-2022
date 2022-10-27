@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --orange: #e46e49;
+    --white: #fff;
+    --translucid: rgba(74, 74, 74, 0.08);
+    --text-primary: #4A4A4A;
+    --text-bold: #e46e49;
+    --container-width-lg: 75%;
+    --background: #fdfbfb;
+
+    --container-width-lg: 75%;
+    --container-width-md: 86%;
+    --container-width-sm: 90%;
+
+    --transition: all 400ms ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: var(--text-primary);
+    line-height: 1.7;
+}
+
+/* GENERAL STYLES */
+.container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+section {
+    margin-top: 8rem;
+}
+
+section>h2,
+section>h5 {
+    text-align: center;
+    color: var(--text-bold);
+}
+
+section>h2 {
+    color: var(--text-primary);
+    margin-bottom: 3rem;
+}
+
+p {
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.text-light {
+    color: var(--text-secondary);
+}
+
+a {
+    color: var(--orange);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--text-primary);
+}
+
+.btn {
+    font-weight: 600;
+    width: max-content;
+    display: inline-block;
+    color: var(--orange);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    border: 1px solid var(--orange);
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background-color: var(--white);
+    color: var(--orange);
+    border-color: transparent;
+}
+
+.btn-primary {
+    background-color: var(--orange);
+    color: var(--text-primary);
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* MEDIA QUERIES (MEDIUM) */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-width-md);
+    }
+
+    section {
+        margin-top: 6rem;
+    }
+
+}
+
+/* MEDIA QUERIES (SMALL) */
+@media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+
+    section>h2 {
+        margin-bottom: 2rem;
+    }
+}

@@ -1,0 +1,21 @@
+.contact__container {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    gap: 0.1rem;
+    place-items: center;
+}
+
+/* MEDIA QUERIES (MEDIUM) */
+@media screen and (max-width: 1024px) {
+    .contact__container {
+        grid-template-columns: repeat(2, max-value);
+    }
+}
+
+/* MEDIA QUERIES (SMALL) */
+@media screen and (max-width: 600px) {
+    .contact__container {
+        grid-template-columns: 1fr;
+        width: var(--container-width-sm);
+    }
+}
