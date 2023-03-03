@@ -41,18 +41,21 @@ const Experience = () => {
                 <div className="experience__work">
                     <h3>{texts.expH3Work}</h3>
                     <div className="experience__content">
+                        
                         <article className='experience__details'>
                             < BsCheckCircle className='experience__details-icon' />
                             <div> <h4>{texts.expTecso}</h4>
                                 <small>@ {texts.expTecsoPlace}</small>
                                 <small  > | {texts.expTecsoTime}</small></div>
                         </article>
+
                         <article className='experience__details'>
                             < BsCheckCircle className='experience__details-icon' />
                             <div> <h4>{texts.expColdview}</h4>
                                 <small>@ {texts.expColdviewPlace}</small>
                                 <small  > | {texts.expColdviewTime}</small></div>
                         </article>
+
                         <article className='experience__details'>
                             < BsCheckCircle className='experience__details-icon' />
                             <div> <h4>{texts.expEnc}</h4>
