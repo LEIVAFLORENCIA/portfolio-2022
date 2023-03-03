@@ -18,7 +18,7 @@ const translations = {
         aboutLibList: "Bootstrap, MaterialUI",
         aboutDesignList: "Illustrator, Figma",
         aboutP: "Developer and enthusiast student to be constantly learning. Passionate and eager to learn about new technologies to enhance my professional skills in my career as full-stack",
-        aboutPTech: "+ STACK: HTML, CSS, Git, Python, SQL, Linux, APIRest",
+        aboutPTech: "+ STACK: JAVA, ReactJS, Micronaut, Spring Boot, Git, SQL, Linux, APIRest",
         expH5: "Education and work",
         expH2: "My experience",
         expH3Education:"Education",
